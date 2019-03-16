@@ -1,13 +1,13 @@
-**Creative CV Bootstrap Template**
-v1.0.2
-Release Date: 24th Jan, 2018
-Update Date: 3rd Feb, 2018
+**Material Design Portfolio Template**
+FREE LICENSE
+v1.0.3
+Release Date: 24th Jan, 2017
+Update Date: 5th Oct, 2017
 
-A Creative Resume/CV Template for Professionals built with Bootstrap 4 by TemplateFlip.com
+A Material design portfolio template built with Material Design Light framework by TemplateFlip.com.
 
-
-Live Demo - https://templateflip.com/demo/?template=creative-cv
-Download - https://templateflip.com/templates/creative-cv/
+Live Demo - https://demo.templateflip.com/material-portfolio
+Download - https://templateflip.com/templates/material-portfolio/
 
 
 License Terms
@@ -17,7 +17,7 @@ You can use this template for free in both personal as well as commercial projec
 In return you need to keep the credit to https://templateflip.com from the site footer.
 
 You can buy a premium license to be allowed to remove the footer link.
-https://templateflip.com/templates/creative-cv/
+https://templateflip.com/templates/material-portfolio/
 
 
 Prohibitions
