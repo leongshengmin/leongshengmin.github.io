@@ -177,6 +177,7 @@ img {
 img.article-image {
   width: 100%;
   height: auto;
+  background: #fff;
 }
 
 .demo-card-image.mdl-card {
@@ -184,12 +185,34 @@ img.article-image {
   height: 192px;
 }
 
-.person1 {
-  background: url("../img/person1.jpg") center/cover;
+.tp-title {
+  margin-bottom: 2px;
 }
 
-.person2 {
-  background: url("../img/person2.jpg") center/cover;
+.portfolio-title {
+  height: 80px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.portfolio-supporting-text {
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.portfolio-border {
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.portfolio-img {
+  height: 200px;
+}
+
+.we-img {
+  margin-top: 10%;
 }
 
 .demo-card-image > .mdl-card__actions {
