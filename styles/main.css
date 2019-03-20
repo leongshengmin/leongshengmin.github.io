@@ -20,6 +20,10 @@ img {
   margin-bottom: 10px;
 }
 
+.tools-title {
+  margin-top: 50px;
+}
+
 .is-compact .mdl-layout__title span {
   display: none;
 }
@@ -209,6 +213,7 @@ img.article-image {
 
 .portfolio-img {
   height: 200px;
+  margin-bottom: 15px;
 }
 
 .we-img {
