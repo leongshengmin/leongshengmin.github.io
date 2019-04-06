@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
     f.children('textarea').each(function() { // run all inputs
 
       var i = $(this); // current input
-      var rule = i.attr('data-rule');
+        var rule = i.attr('data-rule');
 
       if (rule !== undefined) {
         var ierror = false; // error flag for current input
@@ -91,15 +91,15 @@ jQuery(document).ready(function($) {
     if (ferror) return false;
     else var str = $(this).serialize();
     var action = $(this).attr('action');
-    if( ! action ) {
-      action = 'contactform/contactform.php';
-    }
+      if (!action) {
+        action = 'contactform.php';  
+      }
+      console.log(str);
     $.ajax({
       type: "POST",
       url: action,
       data: str,
-      success: function(msg) {
-        // alert(msg);
+        success: function (msg) {
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
