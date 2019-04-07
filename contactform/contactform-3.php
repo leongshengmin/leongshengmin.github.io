@@ -37,10 +37,6 @@ if (@mail($email_to, $subject, $email_message, $headers)) {
 
 ?>
  
-<!-- include your own success html here -->
- 
-Thank you for contacting me. I will be in touch with you shortly.
- 
 <?php
  
 }
