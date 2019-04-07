@@ -98,7 +98,7 @@ jQuery(document).ready(function($) {
       $.ajax({
       type: "POST",
       url: action,
-      dataType: "json",
+      dataType:"jsonp",
       data: str,
         success: function (msg) {
         if (msg == 'OK') {
