@@ -92,14 +92,12 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     var action = $(this).attr('action');
       if (!action) {
-          action = 'https://formspree.io/leongshengmin@gmail.com';  
+          action = 'contactform.php';  
       }
       console.log(str);
       $.ajax({
       type: "POST",
       url: action,
-      dataType: "jsonp text xml",
-      crossDomain: true, 
       data: str,
         success: function (msg) {
         if (msg == 'OK') {
