@@ -1,7 +1,5 @@
 <?php
 if(isset($_POST['email'])) {
-
-    echo("in php");
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "e0235265@u.nus.edu";
@@ -24,13 +22,11 @@ if(isset($_POST['email'])) {
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Subject: ".clean_string($subject)."\n";
     $email_message .= "Message: ".clean_string($message)."\n";
-
-	echo($email_message);
  
 // create email headers
 $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $email_from . "\r\n";
+    .'From: ' . $name. '@leongshengmin.herokuapp.com/' . "\r\n";
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 if (@mail($email_to, $subject, $email_message, $headers)) {
