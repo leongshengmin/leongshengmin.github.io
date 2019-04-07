@@ -92,10 +92,10 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     var action = $(this).attr('action');
       if (!action) {
-          action = 'https://formspree.io/leongshengmin@gmail.com';  
+          action = 'formspree.io/leongshengmin@gmail.com';  
       }
       console.log(str);
-    $.ajax({
+      $.ajax({
       type: "POST",
       url: action,
       data: str,
