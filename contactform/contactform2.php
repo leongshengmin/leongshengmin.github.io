@@ -33,7 +33,7 @@ try {
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Subject: ".clean_string($subject)."\n";
     $email_message .= "Message: ".clean_string($message)."\n";
-
+    
     //Server settings
     $mail->SMTPDebug = 2;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
@@ -45,7 +45,6 @@ try {
     //Set who the message is to be sent to
     $mail->addAddress($email_to, 'Receiver');
     // Content
-    $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = $subject;
     $mail->Body    = $email_message;
 
