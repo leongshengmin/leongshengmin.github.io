@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     var action = $(this).attr('action');
       if (!action) {
-          action = 'http://formspree.io/leongshengmin@gmail.com';  
+          action = 'https://formspree.io/leongshengmin@gmail.com';  
       }
       console.log(str);
     $.ajax({
