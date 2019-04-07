@@ -98,7 +98,8 @@ jQuery(document).ready(function($) {
       $.ajax({
       type: "POST",
       url: action,
-      dataType:"jsonp",
+      dataType: "jsonp text xml",
+      crossDomain: true, 
       data: str,
         success: function (msg) {
         if (msg == 'OK') {
