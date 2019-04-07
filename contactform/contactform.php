@@ -26,7 +26,7 @@ if(isset($_POST['email'])) {
 // create email headers
 $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $name. '@leongshengmin.herokuapp.com/' . "\r\n";
+    .'From: '. 'leongshengmin@herokuapp.com/' . "\r\n";
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 if (@mail($email_to, $subject, $email_message, $headers)) {
