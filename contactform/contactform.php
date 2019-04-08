@@ -44,6 +44,6 @@ $sendgrid = new \SendGrid('SG.VWsdzwXIRjuIHsAd0bySuQ.Jsu5bTVFhji--aL3GxoO3GazNXk
 try {
     $response = $sendgrid->send($email);
 } catch (Exception $e) {
-    echo('Caught exception: ' + $e->getMessage());
+    echo('Caught exception: ');
+    echo($e->getMessage());
 }
-?>
