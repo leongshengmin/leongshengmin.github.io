@@ -100,11 +100,12 @@ jQuery(document).ready(function($) {
       url: action,
       data: str,
         success: function (msg) {
+          console.log( 'Sent to php' );
+          console.log(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
             $('.contactForm').find("input, textarea").val("");
-            console.log('Sent to php');
         } else {
           $("#sendmessage").removeClass("show");
           $("#errormessage").addClass("show");
