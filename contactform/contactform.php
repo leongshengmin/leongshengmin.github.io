@@ -43,9 +43,6 @@ $email->addContent(
 $sendgrid = new \SendGrid('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');
 try {
     $response = $sendgrid->send($email);
-    print $response->statusCode() . "\n";
-    print_r($response->headers());
-    print $response->body() . "\n";
 } catch (Exception $e) {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
 }
