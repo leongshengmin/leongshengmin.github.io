@@ -3,7 +3,7 @@
 require '../vendor/autoload.php';
 
 // EDIT THE 2 LINES BELOW AS REQUIRED
-  $email_to = "e0235265@u.nus.edu";
+  $email_to = "leongshengmin@gmail.com";
 
   $name = $_POST['name']; // required
   $email_from = $_POST['email']; // required
