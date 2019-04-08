@@ -1,6 +1,6 @@
 <?php
 // If you are using Composer
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 // EDIT THE 2 LINES BELOW AS REQUIRED
   $email_to = "e0235265@u.nus.edu";
@@ -27,17 +27,28 @@ require 'vendor/autoload.php';
 // If you are not using Composer (recommended)
 // require("path/to/sendgrid-php/sendgrid-php.php");
 
-$from = new SendGrid\Email(null, $email_from);
-$subject = $subject;
-$to = new SendGrid\Email(null, $email_to);
-$content = new SendGrid\Content("text/plain",$email_message);
-$mail = new SendGrid\Mail($from, $subject, $to, $content);
+$email = new \SendGrid\Mail\Mail();
+$email->setFrom($email_from, $name);
+$email->setSubject($subject);
+$email->addTo($email_to, "Receiver");
+$email->addContent(
+    "text/plain", $email_message
+);
+// $from = new SendGrid\Email(null, $email_from);
+// $subject = $subject;
+// $to = new SendGrid\Email(null, $email_to);
+// $content = new SendGrid\Content("text/plain",$email_message);
+// $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 $apiKey = getenv('SENDGRID_API_KEY');
 $sg = new \SendGrid($apiKey);
 
-$response = $sg->client->mail()->send()->post($mail);
-echo $response->statusCode();
-echo $response->headers();
-echo $response->body();
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
 ?>
