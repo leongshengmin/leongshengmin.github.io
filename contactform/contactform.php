@@ -43,6 +43,7 @@ $email->addContent(
 $sendgrid = new \SendGrid('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');
 try {
     $response = $sendgrid->send($email);
+    print("Successfully sent mail. I will get back to you shortly.");
 } catch (Exception $e) {
     print('Caught exception: ');
     print($e->getMessage());
