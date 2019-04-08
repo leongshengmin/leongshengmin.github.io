@@ -40,7 +40,7 @@ $email->addContent(
 // $content = new SendGrid\Content("text/plain",$email_message);
 // $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
-$sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+$sendgrid = new \SendGrid('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');
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";
