@@ -45,6 +45,5 @@ try {
     $response = $sendgrid->send($email);
     print("Thank you for contacting me. I will get back to you shortly.");
 } catch (Exception $e) {
-    print('Caught exception: ');
-    print($e->getMessage());
+    print("Sorry, there was some issue delivering your message.")
 }
